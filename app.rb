@@ -11,8 +11,8 @@ class App < Sinatra::Base
 post '/piglatinize' do
    @a = params[:user_phrase]
     #  binding.pry
-    # @pl = Pig_Latinizer.new
-
+    @pl_instance = Pig_Latinizer.new
+    @pl = @pl_instance.Pig_Latinizer
   erb :user_input
 end
 
