@@ -15,7 +15,7 @@ class PigLatinizer
   end
 
   def latinize(word)
-    alpha = ('a'..'z').to_a
+    alpha = ('a'..'z', 'A'..'Z').to_a
     vowels = %w[a e i o u]
     consonants = alpha - vowels
     a = []
