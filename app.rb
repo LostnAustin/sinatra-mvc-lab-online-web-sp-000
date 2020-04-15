@@ -12,7 +12,7 @@ post '/piglatinize' do
    @a = params[:user_phrase]
 
     @pl_instance  = PigLatinizer.new
-       binding.pry
+      #  binding.pry
     @pl = @pl_instance.piglatinize(@a)
   erb :user_input
 end
